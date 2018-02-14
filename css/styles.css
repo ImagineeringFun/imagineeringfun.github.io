@@ -1,0 +1,243 @@
+@import
+url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+
+body {
+  background-image: url('../img/bg.png');
+  margin: 0;
+  background-color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  background-color: #ffffff;
+  box-shadow: 5px 5px 5px #b6c1ce;
+}
+
+footer {
+  color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: .75em;
+  text-align: center;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin: 1em;
+  margin-top: 2em;
+}
+
+nav a {
+  font-weight: 400;
+  text-decoration: none;
+  font-size: .95rem;
+  color: #293f59;
+  padding: .8em;
+}
+
+  h1 {
+    font-weight: 300;
+    font-size: 2.25rem;
+    color: #0470ab;
+    margin-left: 22.5%;
+  }
+
+  h2 {
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: #0470ab;
+    margin-left: 22.5%;
+  }
+
+  h3 {
+    font-weight: 700;
+    font-size: .89rem;
+    color: #293f59;
+  }
+
+  h4 {
+    font-weight: 300;
+    font-size: 1.75rem;
+    color: #162f4a;
+    margin-left: 3%;
+    margin-bottom: 15px;
+    }
+
+  .dl-info {
+    margin-left: 3%;
+    margin-right: 35%;
+    font-size: 1.3rem;
+    font-weight: 300;
+  }
+
+  #Search {
+    font-style: italic;
+    max-height: 24px;
+    max-width: 282px;
+    min-height: 24px;
+    min-width: 282px;
+    background-image: url(../img/searchbar.png);
+    background-repeat: no-repeat;
+    color: #a1afc0;
+    font-size: 1rem;
+    text-indent: 30px;
+    border-radius: 10px;
+    outline: 0;
+}
+
+  #search-padding {
+    padding: 1.5em;
+  }
+
+  input{
+  font-family: 'Roboto', sans-serif;
+  }
+
+  #attList {
+    text-align: center;
+  }
+
+  #td-title {
+    text-align: left;
+    font-weight: 500;
+    font-size: 1.45rem;
+  }
+
+  #tr-hover:hover {
+    color: #1994d7;
+  }
+
+  #td-pg {
+    text-align: left;
+    font-weight: 400;
+    font-size: .75rem;
+  }
+
+  .td-img {
+    padding: 10px;
+  }
+
+.navlogo {
+  padding: 5;
+}
+.container {
+  width: 55%;
+  margin: 0 auto;
+}
+
+.rounded-countainer {
+  width: 50%;
+  border-radius: 15px;
+  background-color: #FFFFFF;
+  color: #253b56;
+  margin-left: 22.5%;
+}
+
+.rounded-img {
+  border-radius: 10px;
+  width: 94%;
+}
+
+.navlogo {
+  float: left;
+margin-top: .75rem;
+  margin-right: 1rem;
+}
+
+
+.cart-icon{
+  height: 1.3rem;
+}
+
+.hero-text {
+  position: absolute;
+  color: #FFFFFF;
+  font-size: 3.4rem;
+  font-weight: 300;
+  top: 42.5%;
+  left: 27.5%
+}
+
+.hero-text a {
+  text-decoration: none;
+  position: absolute;
+  color: #FFFFFF;
+  font-size: 1.85rem;
+  font-weight: 700;
+  top: 135%;
+  left: 40%
+}
+
+  .hero-text a:hover {
+    color: #bab7b8;
+  }
+
+#nav-global {
+  background-color: #FFFFFF;
+/*  padding: .25; */
+  font-size: .80rem;
+  font-weight: 400;
+}
+
+#nav-global li {
+  position: relative;
+  display: inline-block;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: .95rem;
+  color: #293f59;
+  padding: .8em;
+}
+
+#nav-global li a {
+  background-color: #FFFFFF;
+  color: #293f59;
+  padding: .5;
+  font-size: .85rem;
+}
+
+#nav-global li:hover a{
+  color: #1994d7;
+}
+
+#nav-global li ul {
+  position: absolute;
+  display: none;
+  background-color: #FFFFFF;
+  border: 5px solid #FFFFFF;
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px #b6c1ce;
+}
+
+#nav-global li ul li {
+  display:block;
+  float: none;
+  width: 15em;
+  background-color: #FFFFFF;
+  color: #293f59;
+}
+
+#nav-global li ul li a, #nav-global li:hover ul li a {
+  display:block;
+  padding: 0;
+  color: #253b56;
+  background-color: #FFFFFF;
+}
+
+#nav-global li:hover ul {
+  display: block;
+}
+
+#nav-global li:hover ul li a:hover {
+  color: #FFFFFF;
+  background-color: #1994d7;
+  border: 0px solid #1994d7;
+  border-radius: 3px;
+  padding: 1px;
+}
