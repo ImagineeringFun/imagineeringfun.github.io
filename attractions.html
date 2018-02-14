@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Attractions | Imagineering Fun!</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"
+    <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+  </head>
+
+
+
+    <body>
+      <header>
+        <div class="container">
+            <a href="index.html"><img src="img/logo.png" alt="logo" class="navlogo" height="60" width="60"></a>
+
+            <nav>
+              <ul id="nav-global">
+              <li><a href="#">Parks & Tickets</a>
+                  <ul>
+                                <h3>Theme Parks</h3>
+                    <li><a href="disneyland.html">Disneyland Park</a></li>
+                    <li><a href="dca.html">Disney California Adventure Park</a></li>
+                      <h3>Maps</h3>
+                      <li><a href="#">Explore the Resort</a></li>
+                        <h3>Tickets</h3>
+                          <li><a href="#">Park Tickets</a></li>
+                      </li>
+                  </ul>
+              <li><a href="#">Places to Stay</a>
+                <ul>
+                  <li><a href="#">Disney's Grand Californian Hotel & Spa</a></li>
+                  <li><a href="#">Disneyland Hotel</a></li>
+                  <li><a href="#">Disney's Paradise Pier Hotel</a></li>
+                </ul>
+              </li>
+              <!-- -->
+              <li><a href="#">Things to Do</a>
+                <ul>
+                  <h3>Activities</h3>
+                  <li><a href="attractions.html">Attractions</a></li>
+                  <li><a href="#">Entertainment</a></li>
+                </ul>
+              </li>
+              <!-- -->
+              <li><a href="#">Help</a>
+                <ul>
+                  <h3>Frequently Asked Questions</h3>
+                  <li><a href="serverrp.html">Why is my resource pack not working?</a></li>
+                  <li><a href="apply.html">How can I become a cast member?</a></li>
+                </ul>
+              </li>
+              <li><a href="cart.html"><span><img src="img/cart.png" alt="Cart" height="34" class="cart-icon"></span>Cart</a></li>
+            </ul>
+            </nav>
+        </div>
+      </header>
+      <br>
+      <br>
+
+      <h1>Attractions</h1>
+      <h2>Adventures, classic stories and exhilarating thrills.</h2>
+      <br>
+      <br>
+      <div class="rounded-countainer">
+        <div id="search-padding">
+        <input type="text" id="Search" onkeyup="searchAttractions()" placeholder="Search within Attractions" title="Type in an attraction">
+        </div>
+      </div>
+      <br>
+      <div class="rounded-countainer" id="attList">
+        <table id="attTable">
+          <tr class="header">
+            <th style="width:10%;"></th>
+            <th style="width:25%;">Attraction</th>
+            <th style="width:30%;">Status</th>
+          </tr>
+          <tr id="tr-hover">
+            <td><img src="img/table/alice.png" alt="" class="td-img"> </td>
+            <td><h4 id="td-title">Alice in Wonderland</h4>
+                <p id="td-pg">Height: Any Height<br>
+                   Slow Rides, Dark, Loud<br>
+                   Disneyland Park, Fantasyland</p></td>
+            <td><img src="img/iconcheck.png" alt=""> </td>
+          </tr>
+          <tr id="tr-hover">
+            <td><img src="img/table/astro_orbitor.png" alt="" class="td-img"> </td>
+            <td><h4 id="td-title">Astro Orbitor</h4>
+                <p id="td-pg">Height: Any Height<br>
+                   Spinning, Interactive<br>
+                   Disneyland Park, Tomorrowland</p></td>
+            <td><img src="img/iconconstruction.png" alt=""> </td>
+          </tr>
+          <tr id="tr-hover">
+            <td><img src="img/table/autopia.png" alt="" class="td-img"> </td>
+            <td><h4 id="td-title">Autopia</h4>
+                <p id="td-pg">Height: 32in (81cm) or taller<br>
+                   Slow Rides, Loud, 1955 Original Ride, Interactive, Rider Switch<br>
+                   Disneyland Park, Tomorrowland</p></td>
+            <td><img src="img/iconx.png" alt=""> </td>
+          </tr>
+          <tr id="tr-hover">
+            <td><img src="img/table/btmr.png" alt="" class="td-img"> </td>
+            <td><h4 id="td-title">Big Thunder Mountain Railroad</h4>
+                <p id="td-pg">Height: 40in (102cm) or taller<br>
+                   Small Drops, Thrill Rides, Dark, Loud, FASTPASS, Rider Switch<br>
+                   Disneyland Park, Frontierland</p></td>
+            <td><img src="img/iconcheck.png" alt=""> </td>
+          </tr>
+          <tr id="tr-hover">
+            <td><img src="img/table/buzz.png" alt="" class="td-img"> </td>
+            <td><h4 id="td-title">Buzz Lightyear Astro Blasters</h4>
+                <p id="td-pg">Height: Any Height<br>
+                   Slow Rides, Spinning, Dark, Loud, FASTPASS, Indoor, Interactive<br>
+                   Disneyland Park, Tomorrowland</p></td>
+            <td><img src="img/iconcheck.png" alt=""> </td>
+          </tr>
+          <tr id="tr-hover">
+            <td><img src="img/table/caseyjr.png" alt="" class="td-img"> </td>
+            <td><h4 id="td-title">Casey Jr. Circus Train</h4>
+                <p id="td-pg">Height: Any Height<br>
+                   Slow Rides, 1955 Original Ride<br>
+                   Disneyland Park, Fantasyland</p></td>
+            <td><img src="img/iconcheck.png" alt=""> </td>
+          </tr>
+          <tr id="tr-hover">
+            <td><img src="img/table/disneygallery.png" alt="" class="td-img"> </td>
+            <td><h4 id="td-title">The Disney Gallery</h4>
+                <p id="td-pg">Height: Any Height<br>
+                   Discovery, Indoor<br>
+                   Disneyland Park, Main Street, U.S.A.</p></td>
+            <td><img src="img/iconcheck.png" alt=""> </td>
+          </tr>
+          <tr id="tr-hover">
+            <td><img src="img/table/monorail.png" alt="" class="td-img"> </td>
+            <td><h4 id="td-title">Disneyland Monorail</h4>
+                <p id="td-pg">Height: Any Height<br>
+                   Getting Around<br>
+                   Disneyland Park, Tomorrowland</p></td>
+            <td><img src="img/iconcheck.png" alt=""> </td>
+          </tr>
+          <tr id="tr-hover">
+            <td><img src="img/table/railroad.png" alt="" class="td-img"> </td>
+            <td><h4 id="td-title">Disneyland Railroad</h4>
+                <p id="td-pg">Height: Any Height<br>
+                   Slow Rides, Dark, Loud, 1955 Original Ride, Getting Around<br>
+                   Disneyland Park, Multiple Locations</p></td>
+            <td><img src="img/iconcheck.png" alt=""> </td>
+          </tr>
+          <tr id="tr-hover">
+            <td><img src="img/table/lincoln.png" alt="" class="td-img"> </td>
+            <td><h4 id="td-title">The Disneyland Story presenting Great Moments with Mr. Lincoln</h4>
+                <p id="td-pg">Height: Any Height<br>
+                   Dark, Discovery, Indoor<br>
+                   Disneyland Park, Main Street, U.S.A.</p></td>
+            <td><img src="img/iconconstruction.png" alt=""> </td>
+          </tr>
+          <tr id="tr-hover">
+            <td><img src="img/table/tikiroom.png" alt="" class="td-img"> </td>
+            <td><h4 id="td-title">Enchanted Tiki Room</h4>
+                <p id="td-pg">Height: Any Height<br>
+                   Dark, Loud, Indoor, Stage Shows<br>
+                   Disneyland Park, Adventureland</p></td>
+            <td><img src="img/iconconstruction.png" alt=""> </td>
+          </tr>
+          <tr id="tr-hover">
+            <td><img src="img/table/nemo.png" alt="" class="td-img"> </td>
+            <td><h4 id="td-title">Finding Nemo Submarine Voyage</h4>
+                <p id="td-pg">Height: Any Height<br>
+                   Slow Rides, Water Rides, Dark, Loud<br>
+                   Disneyland Park, Tomorrowland</p></td>
+            <td><img src="img/iconcheck.png" alt=""> </td>
+          </tr>
+          <tr id="tr-hover">
+            <td><img src="img/table/exposition.png" alt="" class="td-img"> </td>
+            <td><h4 id="td-title">Frontierland Shootin' Exposition</h4>
+                <p id="td-pg">Height: Any Height<br>
+                   Loud, Interactive<br>
+                   Disneyland Park, Frontierland</p></td>
+            <td><img src="img/iconcheck.png" alt=""> </td>
+          </tr>
+        </table>
+
+      </div>
+
+      <script>
+        function searchAttractions() {
+          var input, filter, table, tr, td, i;
+          input = document.getElementById("Search");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("attTable");
+          tr = table.getElementsByTagName("tr");
+          for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+              if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+              } else {
+                tr[i].style.display = "none";
+              }
+            }
+          }
+        }
+  </script>
+    </body>
+    <br>
+    <br>
+    <footer>
+        © Imagineering Fun!, All Rights Reserved
+    </footer>
+    <br>
+    <br>
+    <br>
+  </html>
