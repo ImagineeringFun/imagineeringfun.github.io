@@ -11,7 +11,8 @@ body {
 
 body {
   margin: 0;
-  background: #2c2c33;
+  /* background-image: url('http://imagineeringfun.net/img/bg.png'); */
+  background-color: white;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -41,7 +42,8 @@ body {
 
 .player {
   width: 300px;
-  background: #1a1a1d;
+  /* background: #1a1a1d; */
+  background: #1994d7;
   color: #fff;
   text-align: center;
 
@@ -90,7 +92,7 @@ body {
           rgba(30, 30, 33, 0.25),
           rgba(118, 60, 240, 0.25),
           rgba(92, 89, 229, 0.45)),
-  url("https://crafatar.com/avatars/606e2ff0-ed77-4842-9d6c-e1d3321c7838");
+  url("https://crafatar.com/avatars/a3ea190b-cdff-4f7a-8394-755beafa031b");
   background-size: cover;
 }
 
@@ -179,7 +181,7 @@ body {
 }
 
 .controls__btn {
-  background: #1e1e21;
+  background: #1994d7;
   -webkit-transition: all .2s linear;
   transition: all .2s linear;
   -webkit-box-flex: 1;
@@ -188,16 +190,16 @@ body {
 }
 
 .controls__btn:hover {
-  background: #1a1a1d;
+  background: #0056b8;
 }
 
 .tracks {
-  background: #1e1e21;
+  background: #1994d7;
 }
 
 .tracks__track {
   padding: 13px 25px;
-  border-bottom: 1px solid #252529;
+  border-bottom: 1px solid #1994d7;
   cursor: pointer;
 }
 
@@ -206,7 +208,7 @@ body {
 }
 
 .tracks__track--active {
-  background: #252529;
+  background: #1994d7;
 }
 
 .tracks__list {
@@ -246,18 +248,13 @@ body {
 }
 
 footer {
-  background-color: rgb(30, 30, 33);
-  padding: 10px;
-  position: absolute;
-  width: 100%;
-  left: 0; bottom: 0px;
-  color: #fff;
-  text-align: center;
-  font-size: 16px;
-  text-overflow: ellipsis;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+    color: #253b56;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: .75em;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
 }
 
 .footer-logo {
@@ -324,7 +321,7 @@ footer {
 section{
   width: 100vw;
   overflow: hidden;
-  height: 25vh;
+  height: 8vh;
 }
 .notification.success{
   background: #2ecc71;
