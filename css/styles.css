@@ -170,6 +170,7 @@ margin-top: .75rem;
 }
 
 .hero-text a {
+  transition: color 0.5s ease;
   text-decoration: none;
   position: relative;
   color: #FFFFFF;
