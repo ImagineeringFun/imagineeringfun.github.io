@@ -1,107 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
-        <!-- Title -->
-        <title>AudioPass | Imagineering Fun!</title>
-        <!-- CSS -->
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway" />
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-        <link href="files/css/main.css" rel="stylesheet"/>
+    <link type="text/css" rel="stylesheet" href="css/openaudiomc.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.slim.js"></script>
+    <script src="libs/JsHue.js"></script>
+    <script src="libs/color.js"></script>
+    <script src="libs/js.cookie.js"></script>
 
-        <!-- META -->
-        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-        <!-- ICON -->
-        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
-        <!-- <link rel="icon" href="files/images/small_logo.png"/> -->
-        <!-- <link rel="image" href="files/images/small_logo.png"/> -->
-        <!-- JS -->
-        <script src="files/js/jquery.js"></script>
-        <script src="files/js/jqueryui.js"></script>
-        <script src="files/js/hueapi.js"></script>
-        <script src="files/js/soundmanager2.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.1/socket.io.slim.js"></script>
-
-        <!-- CORE -->
-        <script src="files/core/audioman.js"></script>
-        <script src="files/core/ui.js"></script>
-        <script src="files/core/lang.js"></script>
-        <script src="files/core/hue.js"></script>
-        <script src="files/core/core.js"></script>
-        <script src="files/core/socket.js"></script>
-        <script src="files/core/listeners.js"></script>
-                <style>
-        #overlayDIV {
-          width: 100%;
-          height: 100%;
-          text-align: center;
-          background-color: black;
-          opacity: .75;
-          position: fixed;
-          vertical-align: middle;
-        }
-        </style>
-        <script>
-        function myFunction() {
-            var x = document.getElementById("overlayDIV");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
-            }
-        }
-      </script>
-    </head>
-     <div id="overlayDIV" onclick="myFunction()">
-      <img src="http://imagineeringfun.net/img/audiopasslogo.png" height="60px" style="padding-top:15rem">
-      <h1 style="color:#93ba1c;font-size:3rem;">Click Here to Connect!<br>🔊</h1>
-    </div>
-    <header>
-      <div style="width:58%; margin-left: auto; margin-right: auto; padding-top:10px;">
-        <a href="http://imagineeringfun.net/" style="text-decoration: none;"><span style="color:#78899e; font-size:15px;"><i class="fa fa-mail-reply" style="font-size:12px; color:#78899e;"></i> <strong>Imagineering Fun</strong></span></a>
-          <br>
-        <img src="http://imagineeringfun.net/img/audiopasslogo.png" height="60px">
-      </div>
-    </header>
-    <body id="body">
-      <img src="http://imagineeringfun.net/img/audiopassback.png" width="100%">
-        <div style="display:none" id="faders"></div>
-        <section>
-            <div class="notification normal closed" id="notification">
-                <span class="title">loading...</span> <span id="notitext">im starting!</span><span class="close">X</span>
-            </div>
-        </section>
-        <div style="text-align: center;">
-            <div class="player">
-                <div class="player__wrapper">
-                    <div class="player__holder">
-                        <div class="player__cover" id="skull"></div>
-                    </div>
-                </div>
-                <div class="player__info">
-                    <h2 class="player__title" id="username">Mickey Mouse</h2>
-                    <h3 class="oam_volume_display">Vol: 19.55%</h3>
-                </div>
-                <div class="oam_volume_display_slider-holder">
-                    <div class="oam_volume_display_slider" style="width: 20.86978%;"></div>
-                </div>
-                <div class="player__controls controls">
-                    <button class="btn controls__btn controls__btn--prev" onclick="oa_volume_decrement()">
-                        <i class="fa fa-volume-down"></i>
-                    </button>
-                    <button class="btn controls__btn controls__btn--play-pause" id="huebutton" onclick="hue.connect(hue);">
-                        <i class="fa fa-lightbulb-o"></i>
-                    </button>
-                    <button class="btn controls__btn controls__btn--next" onclick="oa_volume_increment()">
-                        <i class="fa fa-volume-up"></i>
-                    </button>
-                </div>
-            </div>
+    <title>AudioPass | Imagineering Fun!</title>
+</head>
+<body id="page">
+<div class="panel blurrOut" id="welcome">
+    <div class="panel-content">
+        <div>
+            <img src="img/audiopasslogo.png" class="blurIn">
+            <h2 class="blurIn">
+                <span class="button" id="start-button">Connect</span>
+            </h2>
+            <p class="blurIn">
+                <span class="bold">Welcome to AudioPass!</span><br/>Click the connect button above to experience the sights and sounds of the park.
+            </p>
         </div>
-    </body>
-     <footer id="footer">
-        <span class="roboto"><b id="footer_title">{title}</b> - &#9400; Imagineering Fun!, All Rights Reserved</span>
-    </footer>
+    </div>
+</div>
+
+<div class="panel" id="app" style="display: none;">
+    <div class="panel-content">
+        <div>
+            <img src="img/audiopasslogo.png">
+            <h1 class="blurIn">
+                <span id="username-display">Loading</span>
+            </h1>
+            <p class="blurIn">
+                <label id="volume-label">
+                    <input type="range" id="volume-slider"
+                           name="volume" min="0"
+                           max="100" value="70"/>
+                </label>
+                <br/><br/>
+                <span id="status-message"></span>
+            </p>
+        </div>
+    </div>
+    <p class="hueFooter blurIn"
+       id="hue-bridge-menu-button"
+       style="display: none;"
+        >Philips Hue <i class="fa fa-lightbulb-o"></i></p>
+</div>
+
+
+<div class="panel" id="hueMenu" style="display: none;">
+    <div class="hue-page">
+        <h2 class="blurIn">Philips hue</h2>
+        <div class="blurIn" id="select-bridge">
+            <p id="hue-welcome-message">-</p>
+            <span class="button" id="startup-hue" style="color: white;">Start</span>
+        </div>
+    </div>
+
+    <div>
+        <p class="hueFooter blurIn" id="show-main-button">Player <i
+                class="fa fa-volume-up"></i></p>
+    </div>
+</div>
+
+</body>
+<script src="OpenAudioMc.bundle.js"></script>
 </html>
